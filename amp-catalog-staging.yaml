@@ -1,65 +1,67 @@
 name: Cloudera - Staging Catalog
 
 entries:
-  - title: AutoML with TPOT
-    label: automl-with-tpot
-    short_description: AutoML using TPOT, distributed with Dask.
+  - title: Streamlit
+    label: streamlit
+    short_description: Demonstration of how to use Streamlit as a CML Application.
     long_description: >-
-      Automated data visualization and scikit learn pipeline creation using TPOT, Dask, and CML Workers in a Jupyter notebook.
+      This project demonstrates running a small Streamlit application inside CML. It does no machine learning, and simply illustrates the small
+      amount of wiring necessary to create a CML Application using Streamlit.
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/automl-with-tpot.png
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/streamlit.png
     tags:
-      - TPOT
-      - AutoML
-      - Dask
-      - Python
-      - Workers
-    git_url: "https://github.com/andrewrreed/CML_AMP_AutoML_with_TPOT.git"
-    is_prototype: true
-
-  - title: Automatic Text Summarization
-    label: summarize
-    short_description: Automatic text summarization with extractive and abstractive models.
-    long_description: >-
-      This project builds a Streamlit application that demos four automatic summarization models, including extractive and abstractive techniques.
-      It facilitates qualitative and quantitative comparisons of model summaries, as well as allowing users to summarize their own input text.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/summarize.png
-    tags:
-      - Summarization
-      - NLP
       - Streamlit
-    git_url: "https://github.com/andrewrreed/CML_AMP_Summarize.git"
-    is_prototype: true
-
-  - title: Train Gensim's Word2Vec
-    label: gensim-w2v
-    short_description: Demonstration of how to train Gensim's Word2Vec for a non-language use case.
-    long_description: >-
-      This Jupyter Notebook project demonstrates how to train Word2Vec for a non-language  use case to learn embeddings for productcs on an e-commerce website. 
-      Includes a demonstration of hyperparameter optimization and early stopping for the Word2Vec model.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/gensim-w2v.png
-    tags:
-      - Embeddings
-      - Gensim
-      - Word2Vec
-      - Hyperparameter Optimization
-    git_url: "https://github.com/andrewrreed/CML_AMP_Train_Gensim_W2V.git"
-    is_prototype: true
-
-  - title: TensorBoard as a CML Application
-    label: tensorboard
-    short_description: Demonstration of how to use TensorBoard as a CML Application.
-    long_description: >-
-      This project demonstrates how to run a TensorBoard dashboard as an application inside CML. To facilitate the demo, a minimal script is run to train a neural network
-      on the MNIST digits data set while capturing logs that are visualized in the TensorBoard application.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/tensorboard.png
-    tags:
-      - Tensorboard
       - Applications
-      - Tensorflow
-      - Keras
-    git_url: "https://github.com/cloudera/CML_AMP_Tensorboard_on_CML.git"
+      - Data Visualization
+    git_url: "https://github.com/andrewrreed/CML_AMP_Streamlit_on_CML.git"
+    is_prototype: true
+
+  - title: Object Detection Inference Visualized
+    label: object-detection-inference
+    short_description: Interact with a blog-style Streamlit application to visually unpack the inference workflow of a modern, single-stage object detector.
+    long_description: >-
+      This application offers a step-by-step walkthrough to help visualize the inference workflow of a single-stage object detector. Specifically,
+      we'll see how a pre-trained RetinaNet model processes an image to quickly and accurately detect objects while also exploring fundamental object 
+      detection concepts along the way.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/object-detection-inference.png
+    tags:
+      - Computer Vision
+      - Object Detection
+      - PyTorch
+      - Streamlit
+    git_url: "https://github.com/andrewrreed/CML_AMP_Object_Detection_Inference.git"
+    is_prototype: true
+
+  - title: Getting Started with the CML API
+    label: apiv2
+    short_description: Demonstration of how to use the CML API to interact with CML.
+    long_description: >-
+      In addition to the UI interface, Cloudera Machine Learning (CML) provides an API to interact with the platform programmatically. This notebook 
+      demonstrates how to work with the API.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/apiv2.png
+    tags:
+      - API
+      - CML
+      - Python
+    git_url: "https://github.com/andrewrreed/CML_AMP_APIv2.git"
+    is_prototype: true
+
+  - title: Few-Shot Text Classification
+    label: fewshot-text-classification
+    short_description: Perform topic classification on news articles in several limited-labeled data regimes.
+    long_description: >-
+      This project provides a sample user interface that demonstrates how to perform text classification when only a few labeled training 
+      examples exist, or even when there are no training examples at all! The approach relies on embedding text using word embeddings and 
+      sentence embeddings with state-of-the-art Transformer models.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/fewshot-text-classification.png
+    tags:
+      - NLP
+      - Few-Shot Learning
+      - Zero-Shot Classification
+      - Text Embeddings
+      - BERT
+    git_url: "https://github.com/andrewrreed/CML_AMP_Few-Shot_Text_Classification.git"
     is_prototype: true
