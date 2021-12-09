@@ -1,67 +1,153 @@
 name: Cloudera - Staging Catalog
 
 entries:
-  - title: Streamlit
-    label: streamlit
-    short_description: Demonstration of how to use Streamlit as a CML Application.
+  - title: Deep Learning for Image Analysis
+    label: image-analysis
+    short_description: Build a semantic search application with deep learning models.
     long_description: >-
-      This project demonstrates running a small Streamlit application inside CML. It does no machine learning, and simply illustrates the small
-      amount of wiring necessary to create a CML Application using Streamlit.
+      This project demonstrates how to build a scalable semantic search solution
+      on a dataset of images. Pretrained convolutional neural networks are used to
+      extract semantically meaningful representations, which are then indexed
+      using the FAISS library for scalable retrieval. Finally, the project
+      launches an interactive visualization for exploring the quality of
+      representations extracted using multiple model architectures.
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/streamlit.png
-    tags:
-      - Streamlit
-      - Applications
-      - Data Visualization
-    git_url: "https://github.com/andrewrreed/CML_AMP_Streamlit_on_CML.git"
-    is_prototype: true
-
-  - title: Object Detection Inference Visualized
-    label: object-detection-inference
-    short_description: Interact with a blog-style Streamlit application to visually unpack the inference workflow of a modern, single-stage object detector.
-    long_description: >-
-      This application offers a step-by-step walkthrough to help visualize the inference workflow of a single-stage object detector. Specifically,
-      we'll see how a pre-trained RetinaNet model processes an image to quickly and accurately detect objects while also exploring fundamental object 
-      detection concepts along the way.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/object-detection-inference.png
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/image-analysis.jpg
     tags:
       - Computer Vision
-      - Object Detection
-      - PyTorch
-      - Streamlit
-    git_url: "https://github.com/andrewrreed/CML_AMP_Object_Detection_Inference.git"
+      - Image Analysis
+      - Semantic Search
+    git_url: "https://github.com/andrewrreed/CML_AMP_Image_Analysis.git"
     is_prototype: true
 
-  - title: Getting Started with the CML API
-    label: apiv2
-    short_description: Demonstration of how to use the CML API to interact with CML.
+  - title: Deep Learning for Anomaly Detection
+    label: anomaly-detection
+    short_description: Apply modern, deep learning techniques for anomaly detection to identify network intrusions.
     long_description: >-
-      In addition to the UI interface, Cloudera Machine Learning (CML) provides an API to interact with the platform programmatically. This notebook 
-      demonstrates how to work with the API.
+      This project includes implementations of several neural networks
+      (Autoencoder, Variational Autoencoder, Bidirectional GAN, Sequence Models)
+      applied to the task of anomaly detection in Tensorflow 2.0. For comparison,
+      it includes two baselines (One Class SVM, PCA) and provides a frontend
+      interface for exploring model results.
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/apiv2.png
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/anomaly-detection.jpg
     tags:
-      - API
-      - CML
-      - Python
-    git_url: "https://github.com/andrewrreed/CML_AMP_APIv2.git"
+      - Anomaly Detection
+      - Tensorflow
+      - Autoencoder
+      - GAN
+    git_url: "https://github.com/andrewrreed/CML_AMP_Anomaly_Detection.git"
     is_prototype: true
 
-  - title: Few-Shot Text Classification
-    label: fewshot-text-classification
-    short_description: Perform topic classification on news articles in several limited-labeled data regimes.
+  - title: NeuralQA
+    label: neuralqa
+    short_description: >-
+      Launch a visual interface for question answering that supports BERT models and information retrieval methods.
     long_description: >-
-      This project provides a sample user interface that demonstrates how to perform text classification when only a few labeled training 
-      examples exist, or even when there are no training examples at all! The approach relies on embedding text using word embeddings and 
-      sentence embeddings with state-of-the-art Transformer models.
+      This project demonstrates how the Cloudera Fast Forward Labs NeuralQA
+      library can be used to bootstrap an application for extractive question
+      answering. The application interface integrates visualizations for
+      explaining model behaviour and contextual query expansion.
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/fewshot-text-classification.png
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/neuralqa.jpg
     tags:
-      - NLP
-      - Few-Shot Learning
-      - Zero-Shot Classification
-      - Text Embeddings
+      - Question Answering
       - BERT
-    git_url: "https://github.com/andrewrreed/CML_AMP_Few-Shot_Text_Classification.git"
+      - NLP
+    git_url: "https://github.com/andrewrreed/CML_AMP_NeuralQA.git"
+    is_prototype: true
+
+  - title: Structural Time Series
+    label: structural-time-series
+    short_description: Applying a structural time series approach to California hourly electricity demand data.
+    long_description: >-
+      This project provides an example application of a structural approach to time series via 
+      generalized additive models (with the Prophet library) to California hourly electricity demand 
+      data. The primary output of this repository is a small application exposing a probablistic 
+      forecast and interface for asking a probabilistic questions against it.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/structural-time-series.jpg
+    tags:
+      - Time Series
+      - Prophet
+      - Demand Forcasting
+    git_url: "https://github.com/cloudera/CML_AMP_Structural_Time_Series"
+    is_prototype: true
+
+  - title: Analyzing News Headlines with SpaCy
+    label: spacy-entity-extraction
+    short_description: Notebook demonstrating entity extraction on headlines with SpaCy.
+    long_description: >-
+      This project is a single notebook that demonstrates extracting named entities from Reuters news headlines with spaCy. 
+      It provides a few example downstream use cases.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/spacy-entity-extraction.png
+    tags:
+      - SpaCy
+      - NLP
+      - Named Entity Recognition
+    git_url: "https://github.com/andrewrreed/CML_AMP_SpaCy_Entity_Extraction.git"
+    is_prototype: true
+
+  - title: MLFlow Tracking
+    label: mlflow-tracking
+    short_description: Experiment tracking with MLFlow.
+    long_description: >-
+      This project implements minimal viable experiment tracking on a supervised classification problem using scikit-learn and MLFlow.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/mlflow-tracking.png
+    tags:
+      - Experiment Tracking
+    git_url: "https://github.com/andrewrreed/CML_AMP_MLFlow_Tracking.git"
+    is_prototype: true
+
+  - title: Deep Learning for Question Answering
+    label: question-answering
+    short_description: Explore an emerging NLP capability with WikiQA, an automated question answering system built on top of Wikipedia.
+    long_description: >-
+      This project allows users to explore the task of question answering from several angles. First, users can interact with a real QA 
+      system, in which open questions are answered with snippets found in Wikipedia articles. Next, users can explore an app that showcases 
+      the types of models that make QA systems possible. Finally, users can learn and visualize the data structures required for training 
+      and evaluating those models.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/question-answering.png
+    tags:
+      - Automated Question Answering
+      - Extractive Question Answering
+      - BERT
+      - NLP
+    git_url: "https://github.com/andrewrreed/CML_AMP_Question_Answering.git"
+    is_prototype: true
+
+  - title: Explaining Models with LIME and SHAP
+    label: explainability-lime-shap
+    short_description: Learn how to explain ML models using LIME and SHAP.
+    long_description: >-
+      This projects provides a notebook on how to explain machine learning models using tools such as SHAP and LIME. It explores 
+      concepts such as global and local explanations, illustrated with six different models - Naive Bayes, Logistic Regression, 
+      Decision Tree, Random Forest, Gradient Boosted Tree, and a Multilayer Perceptron. It also discusses best practices for debugging 
+      explanations as well as limitations of LIME and SHAP.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/explainability-lime-shap.png
+    tags:
+      - Interpretability
+      - Explainability
+      - LIME
+      - SHAP
+    git_url: "https://github.com/andrewrreed/CML_AMP_Explainability_LIME_SHAP.git"
+    is_prototype: true
+
+  - title: Active Learning
+    label: active-learning
+    short_description: Interactive visual workflow of active learning using the MNIST dataset.
+    long_description: >-
+      Supervised machine learning, while powerful, needs labeled data to be effective. Active learning reduces the number of labeled examples 
+      needed to train a model, saving time and money while obtaining comparable performance to models trained with much more data.This application 
+      demonstrates the active learning workflow in an interactive experience.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/active-learning.png
+    tags:
+      - Active Learning
+      - Learning with Limited Labeled Data
+    git_url: "https://github.com/andrewrreed/CML_AMP_Active_Learning.git"
     is_prototype: true
