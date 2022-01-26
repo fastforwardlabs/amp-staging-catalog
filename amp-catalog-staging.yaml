@@ -1,38 +1,40 @@
 name: Cloudera - Staging Catalog
 
 entries:
-  - title: Deep Learning for Image Analysis
-    label: image-analysis
-    short_description: Build a semantic search application with deep learning models.
+  - title: Video Classification
+    label: video-classification
+    short_description: Demonstration of how to perform video classification using pre-trained TensorFlow models.
     long_description: >-
-      This project demonstrates how to build a scalable semantic search solution
-      on a dataset of images. Pretrained convolutional neural networks are used to
-      extract semantically meaningful representations, which are then indexed
-      using the FAISS library for scalable retrieval. Finally, the project
-      launches an interactive visualization for exploring the quality of
-      representations extracted using multiple model architectures.
+      This project provides a Jupyter Notebook walkthrough of video classification/action recognition with a 
+      pre-trained Tensorflow model and provides guidance for working with video data.  The project also includes 
+      a script that demonstrates how to perform larger-scale model inference.
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/image-analysis.jpg
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/video-classification.jpg
     tags:
-      - Computer Vision
-      - Image Analysis
-      - Semantic Search
-    git_url: "https://github.com/andrewrreed/CML_AMP_Image_Analysis.git"
+      - Video Classification
+      - Action Recognition
+      - Activity Recognition
+      - Video Understanding
+      - Tensorflow
+    git_url: "https://github.com/fastforwardlabs/video-classification.git"
     is_prototype: true
 
-  - title: Structural Time Series
-    label: structural-time-series
-    short_description: Applying a structural time series approach to California hourly electricity demand data.
+  - title: Continuous Model Monitoring
+    label: continuous-model-monitoring
+    short_description: Demonstration of how to perform continuous model monitoring on CML using Model Metrics and Evidently.ai dashboards.
     long_description: >-
-      This project provides an example application of a structural approach to time series via 
-      generalized additive models (with the Prophet library) to California hourly electricity demand 
-      data. The primary output of this repository is a small application exposing a probablistic 
-      forecast and interface for asking a probabilistic questions against it.
+      To combat concept drift in production systems, its important to have robust monitoring capabilities that alert 
+      stakeholders when relationships in the incoming data or model have changed. In this Applied Machine Learning 
+      Prototype (AMP), we demonstrate how this can be achieved on CML. Specifically, we leverage CML's Model Metrics 
+      feature in combination with Evidently.ai's Data Drift, Numerical Target Drift, and Regression Performance reports 
+      to monitor a simulated production model that predicts housing prices over time.
     image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/structural-time-series.jpg
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/continuous-model-monitoring.jpg
     tags:
-      - Time Series
-      - Prophet
-      - Demand Forcasting
-    git_url: "https://github.com/cloudera/CML_AMP_Structural_Time_Series"
+      - Model Monitoring
+      - Production ML
+      - MLOps
+      - Evidently.ai
+      - APIv2
+    git_url: "https://github.com/fastforwardlabs/continuous-monitoring.git"
     is_prototype: true
