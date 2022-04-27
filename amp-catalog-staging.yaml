@@ -1,24 +1,6 @@
 name: Cloudera - Staging Catalog
 
 entries:
-  - title: Video Classification
-    label: video-classification
-    short_description: Demonstration of how to perform video classification using pre-trained TensorFlow models.
-    long_description: >-
-      This project provides a Jupyter Notebook walkthrough of video classification/action recognition with a 
-      pre-trained Tensorflow model and provides guidance for working with video data.  The project also includes 
-      a script that demonstrates how to perform larger-scale model inference.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/video-classification.jpg
-    tags:
-      - Video Classification
-      - Action Recognition
-      - Activity Recognition
-      - Video Understanding
-      - Tensorflow
-    git_url: "https://github.com/fastforwardlabs/video-classification.git"
-    is_prototype: true
-
   - title: Continuous Model Monitoring
     label: continuous-model-monitoring
     short_description: Demonstration of how to perform continuous model monitoring on CML using Model Metrics and Evidently.ai dashboards.
@@ -37,4 +19,50 @@ entries:
       - Evidently.ai
       - APIv2
     git_url: "https://github.com/fastforwardlabs/continuous-monitoring.git"
+    is_prototype: true
+
+  - title: MLFlow Tracking
+      label: mlflow-tracking
+      short_description: Experiment tracking with MLFlow.
+      long_description: >-
+        This project implements minimal viable experiment tracking on a supervised classification problem using scikit-learn and MLFlow.
+      image_path: >-
+        https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/mlflow-tracking.png
+      tags:
+        - Experiment Tracking
+      git_url: "https://github.com/cloudera/CML_AMP_MLFlow_Tracking.git"
+      is_prototype: true
+
+  - title: NeuralQA
+    label: neuralqa
+    short_description: >-
+      Launch a visual interface for question answering that supports BERT models and information retrieval methods.
+    long_description: >-
+      This project demonstrates how the Cloudera Fast Forward Labs NeuralQA
+      library can be used to bootstrap an application for extractive question
+      answering. The application interface integrates visualizations for
+      explaining model behaviour and contextual query expansion.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/neuralqa.jpg
+    tags:
+      - Question Answering
+      - BERT
+      - NLP
+    git_url: "https://github.com/cloudera/CML_AMP_NeuralQA"
+    is_prototype: true
+
+  - title: TensorBoard as a CML Application
+    label: tensorboard
+    short_description: Demonstration of how to use TensorBoard as a CML Application.
+    long_description: >-
+      This project demonstrates how to run a TensorBoard dashboard as an application inside CML. To facilitate the demo, a minimal script is run to train a neural network
+      on the MNIST digits data set while capturing logs that are visualized in the TensorBoard application.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/tensorboard.png
+    tags:
+      - Tensorboard
+      - Applications
+      - Tensorflow
+      - Keras
+    git_url: "https://github.com/cloudera/CML_AMP_Tensorboard_on_CML.git"
     is_prototype: true
