@@ -1,68 +1,37 @@
 name: Cloudera - Staging Catalog
 
 entries:
-  - title: Continuous Model Monitoring
-    label: continuous-model-monitoring
-    short_description: Demonstration of how to perform continuous model monitoring on CML using Model Metrics and Evidently.ai dashboards.
+  - title: Distributed XGBoost with Dask on CML
+    label: dask-on-cml
+    short_description: How to perform distributed training of an XGBoost model using Dask on CML.
     long_description: >-
-      To combat concept drift in production systems, its important to have robust monitoring capabilities that alert 
-      stakeholders when relationships in the incoming data or model have changed. In this Applied Machine Learning 
-      Prototype (AMP), we demonstrate how this can be achieved on CML. Specifically, we leverage CML's Model Metrics 
-      feature in combination with Evidently.ai's Data Drift, Numerical Target Drift, and Regression Performance reports 
-      to monitor a simulated production model that predicts housing prices over time.
+      This project provides a Jupyter Notebook that demonstrates a typical data science workflow for detecting fraudulent credit card 
+      transactions by training a distributed XGBoost model in conjunction with Dask, a library for scaling Python applications, using the CML Workers API. 
     image_path: >-
       https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/continuous-model-monitoring.jpg
     tags:
-      - Model Monitoring
-      - Production ML
-      - MLOps
-      - Evidently.ai
-      - APIv2
-    git_url: "https://github.com/fastforwardlabs/continuous-monitoring.git"
+      - Distributed Computing
+      - XGBoost
+      - Dask
+    git_url: "https://github.com/cloudera/CML_AMP_Dask_on_CML.git"
     is_prototype: true
 
-  - title: MLFlow Tracking
-      label: mlflow-tracking
-      short_description: Experiment tracking with MLFlow.
+  - title: Exploring Intelligent Writing Assistance
+      label: intelligent-writing-assistance
+      short_description: A demonstration of how the NLP task of text style transfer can be applied to enhance the human writing experience using HuggingFace Transformers and Streamlit.
       long_description: >-
-        This project implements minimal viable experiment tracking on a supervised classification problem using scikit-learn and MLFlow.
+        The goal of this application is to demonstrate how the NLP task of text style transfer can be applied to enhance the human writing experience. In this sense, 
+        we intend to peel back the curtains on how an intelligent writing assistant might function — walking through the logical steps needed to automatically re-style a piece of text 
+        (from informal-to-formal or subjective-to-neutral) while building up confidence in the model output.
       image_path: >-
         https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/mlflow-tracking.png
       tags:
-        - Experiment Tracking
-      git_url: "https://github.com/cloudera/CML_AMP_MLFlow_Tracking.git"
+        - NLP
+        - Text Style Transfer
+        - HuggingFace
+        - BERT
+        - BART
+        - Streamlit
+        - PyTorch
+      git_url: "https://github.com/cloudera/CML_AMP_Intelligent_Writing_Assistance.git"
       is_prototype: true
-
-  - title: NeuralQA
-    label: neuralqa
-    short_description: >-
-      Launch a visual interface for question answering that supports BERT models and information retrieval methods.
-    long_description: >-
-      This project demonstrates how the Cloudera Fast Forward Labs NeuralQA
-      library can be used to bootstrap an application for extractive question
-      answering. The application interface integrates visualizations for
-      explaining model behaviour and contextual query expansion.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/neuralqa.jpg
-    tags:
-      - Question Answering
-      - BERT
-      - NLP
-    git_url: "https://github.com/cloudera/CML_AMP_NeuralQA"
-    is_prototype: true
-
-  - title: TensorBoard as a CML Application
-    label: tensorboard
-    short_description: Demonstration of how to use TensorBoard as a CML Application.
-    long_description: >-
-      This project demonstrates how to run a TensorBoard dashboard as an application inside CML. To facilitate the demo, a minimal script is run to train a neural network
-      on the MNIST digits data set while capturing logs that are visualized in the TensorBoard application.
-    image_path: >-
-      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/tensorboard.png
-    tags:
-      - Tensorboard
-      - Applications
-      - Tensorflow
-      - Keras
-    git_url: "https://github.com/cloudera/CML_AMP_Tensorboard_on_CML.git"
-    is_prototype: true
