@@ -6,7 +6,7 @@ entries:
     short_description: How to perform distributed training of an XGBoost model using Dask on CML.
     long_description: >-
       This project provides a Jupyter Notebook that demonstrates a typical data science workflow for detecting fraudulent credit card 
-      transactions by training a distributed XGBoost model in conjunction with Dask, a library for scaling Python applications, using the CML Workers API. 
+      transactions by training a distributed XGBoost model in conjunction with Dask, a library for scaling Python applications, using the CML Workers API.
     image_path: >-
       https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/continuous-model-monitoring.jpg
     tags:
@@ -17,21 +17,21 @@ entries:
     is_prototype: true
 
   - title: Exploring Intelligent Writing Assistance
-      label: intelligent-writing-assistance
-      short_description: A demonstration of how the NLP task of text style transfer can be applied to enhance the human writing experience using HuggingFace Transformers and Streamlit.
-      long_description: >-
-        The goal of this application is to demonstrate how the NLP task of text style transfer can be applied to enhance the human writing experience. In this sense, 
-        we intend to peel back the curtains on how an intelligent writing assistant might function — walking through the logical steps needed to automatically re-style a piece of text 
-        (from informal-to-formal or subjective-to-neutral) while building up confidence in the model output.
-      image_path: >-
-        https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/mlflow-tracking.png
-      tags:
-        - NLP
-        - Text Style Transfer
-        - HuggingFace
-        - BERT
-        - BART
-        - Streamlit
-        - PyTorch
-      git_url: "https://github.com/cloudera/CML_AMP_Intelligent_Writing_Assistance.git"
-      is_prototype: true
+    label: intelligent-writing-assistance
+    short_description: A demonstration of how the NLP task of text style transfer can be applied to enhance the human writing experience using HuggingFace Transformers and Streamlit.
+    long_description: >-
+      The goal of this application is to demonstrate how the NLP task of text style transfer can be applied to enhance the human writing experience. In this sense, 
+      we intend to peel back the curtains on how an intelligent writing assistant might function — walking through the logical steps needed to automatically re-style a piece of text 
+      (from informal-to-formal or subjective-to-neutral) while building up confidence in the model output.
+    image_path: >-
+      https://raw.githubusercontent.com/cloudera/Applied-ML-Prototypes/master/images/mlflow-tracking.png
+    tags:
+      - NLP
+      - Text Style Transfer
+      - HuggingFace
+      - BERT
+      - BART
+      - Streamlit
+      - PyTorch
+    git_url: "https://github.com/cloudera/CML_AMP_Intelligent_Writing_Assistance.git"
+    is_prototype: true
